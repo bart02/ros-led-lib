@@ -1,0 +1,14 @@
+[Unit]
+Description=Led ROS package
+Requires=roscore.service
+After=roscore.service
+
+[Service]
+EnvironmentFile=/lib/systemd/system/roscore.env
+ExecStart=/opt/ros/kinetic/bin/roslaunch led led.launch --wait --screen
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+
