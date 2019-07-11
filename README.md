@@ -1,6 +1,6 @@
 # ros-led-lib
 
-copy to catkin_ws/src/led/  
+git clone https://github.com/bart02/ros-led-lib.git led   
 cd ~/catkin_ws  
 catkin_make  
 edit ledsub.py COUNT param  
